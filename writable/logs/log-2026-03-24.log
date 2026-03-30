@@ -1,0 +1,48 @@
+CRITICAL - 2026-03-24 12:40:55 --> ErrorException: Undefined property: CodeIgniter\Autoloader\Autoloader::$response
+[Method: GET, Route: eligibility-conditions]
+in APPPATH\Controllers\Home.php on line 5.
+ 1 APPPATH\Controllers\Home.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\Autoloader\\Autoloader::$response', 'D:\\xampp\\htdocs\\vda\\app\\Controllers\\Home.php', 5)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(315): include_once('D:\\xampp\\htdocs\\vda\\app\\Controllers\\Home.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\xampp\\htdocs\\vda\\app\\Controllers\\Home.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 6 SYSTEMPATH\Router\Router.php(792): class_exists('\\App\\Controllers\\Home')
+ 7 SYSTEMPATH\Router\Router.php(230): CodeIgniter\Router\Router->processRouteAttributes()
+ 8 SYSTEMPATH\CodeIgniter.php(829): CodeIgniter\Router\Router->handle('eligibility-conditions')
+ 9 SYSTEMPATH\CodeIgniter.php(441): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-03-24 12:40:57 --> ErrorException: Undefined property: CodeIgniter\Autoloader\Autoloader::$response
+[Method: GET, Route: eligibility-conditions]
+in APPPATH\Controllers\Home.php on line 5.
+ 1 APPPATH\Controllers\Home.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\Autoloader\\Autoloader::$response', 'D:\\xampp\\htdocs\\vda\\app\\Controllers\\Home.php', 5)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(315): include_once('D:\\xampp\\htdocs\\vda\\app\\Controllers\\Home.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\xampp\\htdocs\\vda\\app\\Controllers\\Home.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 6 SYSTEMPATH\Router\Router.php(792): class_exists('\\App\\Controllers\\Home')
+ 7 SYSTEMPATH\Router\Router.php(230): CodeIgniter\Router\Router->processRouteAttributes()
+ 8 SYSTEMPATH\CodeIgniter.php(829): CodeIgniter\Router\Router->handle('eligibility-conditions')
+ 9 SYSTEMPATH\CodeIgniter.php(441): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-03-24 12:40:59 --> ErrorException: Undefined property: CodeIgniter\Autoloader\Autoloader::$response
+[Method: GET, Route: course]
+in APPPATH\Controllers\Home.php on line 5.
+ 1 APPPATH\Controllers\Home.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\Autoloader\\Autoloader::$response', 'D:\\xampp\\htdocs\\vda\\app\\Controllers\\Home.php', 5)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(315): include_once('D:\\xampp\\htdocs\\vda\\app\\Controllers\\Home.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\xampp\\htdocs\\vda\\app\\Controllers\\Home.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 6 SYSTEMPATH\Router\Router.php(792): class_exists('\\App\\Controllers\\Home')
+ 7 SYSTEMPATH\Router\Router.php(230): CodeIgniter\Router\Router->processRouteAttributes()
+ 8 SYSTEMPATH\CodeIgniter.php(829): CodeIgniter\Router\Router->handle('course')
+ 9 SYSTEMPATH\CodeIgniter.php(441): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

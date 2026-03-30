@@ -1,0 +1,617 @@
+/* XXL devices (very large screens, 1400px and up) */
+@media (min-width: 1400px) {
+}
+
+/* Extra large devices (large desktops, 1200px to 1399.98px) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+}
+
+/* Large devices (desktops, 992px to 1199.98px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .menuzord-menu > li > a {
+    padding: 15px 10px;
+    font-size: 14px;
+  }
+
+  .menuzord-menu > li > a {
+    color: var(--white);
+    text-decoration: none;
+    padding: 15px 10px;
+    display: flex;
+    align-items: baseline;
+    gap: 3px;
+    transition: all 0.3s;
+    font-weight: 500;
+  }
+
+  .home-banner {
+    position: relative;
+    width: 100%;
+    height: 54vh;
+    overflow: hidden;
+    background: #000;
+}
+
+
+#reservation img{
+  width: 100%;
+}
+
+
+.funfact {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.funfact h2{
+  font-size: 30px;
+}
+
+}
+
+/* Medium devices (tablets, 768px to 991.98px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .logo {
+    flex-direction: row;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .logo img {
+    height: 60px;
+  }
+
+  .header-buttons {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .header-buttons .btn {
+    background-color: var(--primary-colour);
+    color: white;
+    width: fit-content;
+    padding: 10px 10px;
+    /* margin-bottom: 10px; */
+  }
+
+  .home-banner {
+    height: 40vh;
+  }
+
+  .home-banner img {
+    height: auto;
+    object-fit: contain;
+  }
+
+  .home-banner-counter {
+    display: none;
+  }
+
+  .home-banner-button {
+    display: none;
+  }
+
+  .home-banner-pagination {
+    bottom: 5px !important;
+    left: 20px !important;
+  }
+
+  .home-banner-pagination {
+    bottom: 5px !important;
+    left: 10px !important;
+  }
+
+  .home-banner-pagination {
+    position: absolute;
+    bottom: 10px !important;
+    left: 10px !important;
+    display: flex;
+    gap: 7px;
+    z-index: 10;
+  }
+
+  .home-banner-bullet {
+    width: 10px;
+    height: 10px;
+  }
+
+  .home-about .col-lg-2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .achievements-heading h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 7px;
+    position: relative;
+  }
+
+  .faci-offer-btn {
+    margin-bottom: 30px;
+  }
+
+  .faci-offer-card-col {
+    flex: 2 0 50%;
+    max-width: 100%;
+  }
+
+  .home-course .swiper {
+    width: 100%;
+    padding: 0px 0 40px;
+  }
+
+  .home-course .course-details {
+    padding: 20px;
+    min-height: 50px;
+  }
+
+  .mobile-logo-menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+  }
+
+  .mobile-menu-btn {
+    background: var(--primary-colour);
+    color: var(--white) !important;
+    border: none;
+    padding: 5px 0px !important;
+    width: fit-content;
+    text-align: right;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .mobile-logo-menu .logo h3 {
+    width: 100%;
+    color: var(--secondary-colour) !important;
+    margin-bottom: 0;
+  }
+
+  .menuzord-menu {
+    display: block !important;
+    margin-top: 50px !important;
+  }
+
+  .latest-faq-sec {
+    padding: 0px 0;
+  }
+
+  .section-padding {
+    padding: 60px 0 !important;
+  }
+
+  .our-clg-hstl .college-card {
+    min-height: 250px !important;
+    max-height: 252px !important;
+  }
+  .recent-job-button {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    display: none;
+  }
+
+  .faci-offer-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+  }
+
+  .recent-job-button-prev {
+    left: -10px !important;
+  }
+
+  .home-gallery-image {
+    height: 200px;
+  }
+
+  .text-center img {
+    max-width: 350px;
+  }
+
+  .funfact {
+    margin-bottom: 0px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .font-38 {
+    font-size: 1.5rem;
+  }
+
+  .funfact h5 {
+    font-size: 16px !important;
+  }
+
+  .enq {
+    margin-bottom: 0rem;
+  }
+
+  .home-social-media-col-lg-3 {
+    flex: 2 0 50%;
+    max-width: 100%;
+  }
+
+  .top-bar-content {
+    flex-direction: row;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .header-content {
+    flex-direction: row;
+    gap: 20px;
+    text-align: center;
+  }
+  .footer-content {
+    padding: 0rem 0.75rem 0.5rem;
+  }
+
+  .footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-direction: row;
+    margin-top: 30px;
+  }
+}
+
+/* Small devices (phones, 576px to 767.98px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .logo {
+    flex-direction: row;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .logo img {
+    height: 60px;
+  }
+
+  .header-buttons {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .header-buttons .btn {
+    background-color: var(--primary-colour);
+    color: white;
+    width: fit-content;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+  }
+
+  .home-banner {
+    height: 30vh;
+  }
+
+  .home-banner img {
+    height: auto;
+    object-fit: contain;
+  }
+
+  .home-banner-counter {
+    display: none;
+  }
+
+  .home-banner-button {
+    display: none;
+  }
+
+  .home-banner-pagination {
+    bottom: 5px !important;
+    left: 20px !important;
+  }
+
+  .home-banner-pagination {
+    bottom: 5px !important;
+    left: 10px !important;
+  }
+
+  .home-banner-pagination {
+    position: absolute;
+    bottom: 5px !important;
+    left: 10px !important;
+    display: flex;
+    gap: 5px;
+    z-index: 10;
+  }
+
+  .home-banner-bullet {
+    width: 5px;
+    height: 5px;
+  }
+
+  .home-about .col-lg-2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .achievements-heading h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 7px;
+    position: relative;
+  }
+
+  .home-about .col-lg-5,
+  .home-about .col-lg-2 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .home-course .swiper {
+    width: 100%;
+    padding: 0px 0 40px;
+  }
+
+  .home-course .course-details {
+    padding: 20px;
+    min-height: 50px;
+  }
+
+  .mobile-logo-menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+  }
+
+  .mobile-menu-btn {
+    background: var(--primary-colour);
+    color: var(--white) !important;
+    border: none;
+    padding: 5px 0px !important;
+    width: fit-content;
+    text-align: right;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .mobile-logo-menu .logo h3 {
+    width: 100%;
+    color: var(--secondary-colour) !important;
+    margin-bottom: 0;
+  }
+
+  .menuzord-menu {
+    display: block !important;
+    margin-top: 50px !important;
+  }
+
+  .latest-faq-sec {
+    padding: 0px 0;
+  }
+
+  .section-padding {
+    padding: 50px 0 !important;
+  }
+
+  .our-clg-hstl .college-card {
+    min-height: 250px !important;
+    max-height: 252px !important;
+  }
+  .recent-job-button {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    display: none;
+  }
+
+  .faci-offer-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+  }
+
+  .recent-job-button-prev {
+    left: -10px !important;
+  }
+
+  .home-gallery-image {
+    height: 200px;
+  }
+
+  .text-center img {
+    max-width: 275px;
+  }
+
+  .funfact {
+    margin-bottom: 0px;
+  }
+
+  .enq {
+    margin-bottom: 0rem;
+  }
+}
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .logo {
+    flex-direction: row;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .logo img {
+    height: 60px;
+  }
+
+  .header-buttons {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .header-buttons .btn {
+    background-color: var(--primary-colour);
+    color: white;
+    width: fit-content;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+  }
+
+  .home-banner {
+    height: 16vh;
+  }
+
+  .home-banner img {
+    height: auto;
+    object-fit: contain;
+  }
+
+  .home-banner-counter {
+    display: none;
+  }
+
+  .home-banner-button {
+    display: none;
+  }
+
+  .home-banner-pagination {
+    bottom: 5px !important;
+    left: 20px !important;
+  }
+
+  .home-banner-pagination {
+    bottom: 5px !important;
+    left: 10px !important;
+  }
+
+  .home-banner-pagination {
+    position: absolute;
+    bottom: 5px !important;
+    left: 10px !important;
+    display: flex;
+    gap: 5px;
+    z-index: 10;
+  }
+
+  .home-banner-bullet {
+    width: 5px;
+    height: 5px;
+  }
+
+  .home-about .col-lg-2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .achievements-heading h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 7px;
+    position: relative;
+  }
+
+  .home-about .col-lg-5,
+  .home-about .col-lg-2 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .home-course .swiper {
+    width: 100%;
+    padding: 0px 0 40px;
+  }
+
+  .home-course .course-details {
+    padding: 20px;
+    min-height: 50px;
+  }
+
+  .mobile-logo-menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+  }
+
+  .mobile-menu-btn {
+    background: var(--primary-colour);
+    color: var(--white) !important;
+    border: none;
+    padding: 5px 0px !important;
+    width: fit-content;
+    text-align: right;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .mobile-logo-menu .logo h3 {
+    width: 100%;
+    color: var(--secondary-colour) !important;
+    margin-bottom: 0;
+  }
+
+  .menuzord-menu {
+    display: block !important;
+    margin-top: 10px !important;
+  }
+
+  .latest-faq-sec {
+    padding: 0px 0;
+  }
+
+  .section-padding {
+    padding: 40px 0 !important;
+  }
+
+  .our-clg-hstl .college-card {
+    min-height: 250px !important;
+    max-height: 252px !important;
+  }
+  .recent-job-button {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    display: none;
+  }
+
+  .faci-offer-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+  }
+
+  .recent-job-button-prev {
+    left: -10px !important;
+  }
+
+  .home-gallery-image {
+    height: 200px;
+  }
+
+  .text-center img {
+    max-width: 275px;
+  }
+
+  .funfact {
+    margin-bottom: 0px;
+  }
+
+  .enq {
+    margin-bottom: 0rem;
+  }
+}
+
+:root {
+  --primary-colour: #134b9a;
+  --secondary-colour: #08a4f5;
+  --accent: #00a54e;
+  --highlight: #feed00;
+  --cta: #f15a24;
+  --white: #ffffff;
+  --light-bg: #f8f9fa;
+  --dark: #333333;
+  --gray: #6c757d;
+}

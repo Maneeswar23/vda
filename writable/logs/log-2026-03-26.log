@@ -1,0 +1,54 @@
+CRITICAL - 2026-03-26 11:11:18 --> ErrorException: Undefined array key "heading"
+[Method: POST, Route: admin/about/update/about_multi]
+in APPPATH\Controllers\Admin\AboutController.php on line 86.
+ 1 APPPATH\Controllers\Admin\AboutController.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "heading"', 'D:\\xampp\\htdocs\\vda2\\app\\Controllers\\Admin\\AboutController.php', 86)
+ 2 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin\AboutController->update('about_multi')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AboutController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-03-26 11:16:27 --> ErrorException: Undefined array key "description"
+[Method: POST, Route: admin/about/update/about_multi]
+in APPPATH\Controllers\Admin\AboutController.php on line 87.
+ 1 APPPATH\Controllers\Admin\AboutController.php(87): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "description"', 'D:\\xampp\\htdocs\\vda2\\app\\Controllers\\Admin\\AboutController.php', 87)
+ 2 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin\AboutController->update('about_multi')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AboutController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-03-26 11:26:20 --> ErrorException: Undefined array key "heading"
+[Method: POST, Route: admin/about/update/about_multi]
+in APPPATH\Controllers\Admin\AboutController.php on line 86.
+ 1 APPPATH\Controllers\Admin\AboutController.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "heading"', 'D:\\xampp\\htdocs\\vda2\\app\\Controllers\\Admin\\AboutController.php', 86)
+ 2 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin\AboutController->update('about_multi')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AboutController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-03-26 11:26:34 --> ErrorException: Undefined array key "heading"
+[Method: POST, Route: admin/about/update/about_multi]
+in APPPATH\Controllers\Admin\AboutController.php on line 86.
+ 1 APPPATH\Controllers\Admin\AboutController.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "heading"', 'D:\\xampp\\htdocs\\vda2\\app\\Controllers\\Admin\\AboutController.php', 86)
+ 2 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin\AboutController->update('about_multi')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AboutController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-03-26 12:58:31 --> ErrorException: Undefined variable $n
+[Method: GET, Route: admin/about]
+in APPPATH\Views\admin\about\index.php on line 524.
+ 1 APPPATH\Views\admin\about\index.php(524): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $n', 'D:\\xampp\\htdocs\\vda2\\app\\Views\\admin\\about\\index.php', 524)
+ 2 SYSTEMPATH\View\View.php(238): include('D:\\xampp\\htdocs\\vda2\\app\\Views\\admin\\about\\index.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('admin/about/index', [], true)
+ 5 APPPATH\Controllers\Admin\AboutController.php(47): view('admin/about/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin\AboutController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AboutController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

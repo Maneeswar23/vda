@@ -1,0 +1,106 @@
+ERROR - 2026-03-28 07:56:10 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'visakha_defence_acadamey' in /var/www/demo83_color_usr43/data/www/demo83.colormoon.in/vda/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /var/www/demo83_color_usr43/data/www/demo83.colormoon.in/vda/system/Database/MySQLi/Connection.php(201): mysqli->real_connect('localhost', 'demo_colormo_us...', Object(SensitiveParameterValue), 'visakha_defence...', 3306, '', 0)
+#1 /var/www/demo83_color_usr43/data/www/demo83.colormoon.in/vda/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/demo83_color_usr43/data/www/demo83.colormoon.in/vda/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/demo83_color_usr43/data/www/demo83.colormoon.in/vda/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /var/www/demo83_color_usr43/data/www/demo83.colormoon.in/vda/system/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/demo83_color_usr43/data/www/demo83.colormoon.in/vda/system/BaseModel.php(713): CodeIgniter\Model->doFirst()
+#6 /var/www/demo83_color_usr43/data/www/demo83.colormoon.in/vda/app/Models/Admin/AdminUserModel.php(22): CodeIgniter\BaseModel->first()
+#7 /var/www/demo83_color_usr43/data/www/demo83.colormoon.in/vda/app/Controllers/Admin/AuthController.php(47): App\Models\Admin\AdminUserModel->findByEmail('admin@vda.com')
+#8 /var/www/demo83_color_usr43/data/www/demo83.colormoon.in/vda/system/CodeIgniter.php(951): App\Controllers\Admin\AuthController->loginPost()
+#9 /var/www/demo83_color_usr43/data/www/demo83.colormoon.in/vda/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AuthController))
+#10 /var/www/demo83_color_usr43/data/www/demo83.colormoon.in/vda/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /var/www/demo83_color_usr43/data/www/demo83.colormoon.in/vda/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 /var/www/demo83_color_usr43/data/www/demo83.colormoon.in/vda/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 /var/www/demo83_color_usr43/data/www/demo83.colormoon.in/vda/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'visakha_defence_acadamey' in /var/www/demo83_color_usr43/data/www/demo83.colormoon.in/vda/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /var/www/demo83_color_usr43/data/www/demo83.colormoon.in/vda/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/demo83_color_usr43/data/www/demo83.colormoon.in/vda/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/demo83_color_usr43/data/www/demo83.colormoon.in/vda/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /var/www/demo83_color_usr43/data/www/demo83.colormoon.in/vda/system/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#4 /var/www/demo83_color_usr43/data/www/demo83.colormoon.in/vda/system/BaseModel.php(713): CodeIgniter\Model->doFirst()
+#5 /var/www/demo83_color_usr43/data/www/demo83.colormoon.in/vda/app/Models/Admin/AdminUserModel.php(22): CodeIgniter\BaseModel->first()
+#6 /var/www/demo83_color_usr43/data/www/demo83.colormoon.in/vda/app/Controllers/Admin/AuthController.php(47): App\Models\Admin\AdminUserModel->findByEmail('admin@vda.com')
+#7 /var/www/demo83_color_usr43/data/www/demo83.colormoon.in/vda/system/CodeIgniter.php(951): App\Controllers\Admin\AuthController->loginPost()
+#8 /var/www/demo83_color_usr43/data/www/demo83.colormoon.in/vda/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AuthController))
+#9 /var/www/demo83_color_usr43/data/www/demo83.colormoon.in/vda/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/demo83_color_usr43/data/www/demo83.colormoon.in/vda/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /var/www/demo83_color_usr43/data/www/demo83.colormoon.in/vda/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /var/www/demo83_color_usr43/data/www/demo83.colormoon.in/vda/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2026-03-28 07:56:10 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'visakha_defence_acadamey'
+[Method: POST, Route: admin/login]
+in SYSTEMPATH/Database/BaseConnection.php on line 465.
+ 1 SYSTEMPATH/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `admin_users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Models/Admin/AdminUserModel.php(22): CodeIgniter\BaseModel->first()
+ 6 APPPATH/Controllers/Admin/AuthController.php(47): App\Models\Admin\AdminUserModel->findByEmail('admin@vda.com')
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Admin\AuthController->loginPost()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AuthController))
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-03-28 08:00:51 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'visakha_defence_acadamey' in /var/www/demo83_color_usr43/data/www/demo83.colormoon.in/vda/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /var/www/demo83_color_usr43/data/www/demo83.colormoon.in/vda/system/Database/MySQLi/Connection.php(201): mysqli->real_connect('localhost', 'demo_colormo_us...', Object(SensitiveParameterValue), 'visakha_defence...', 3306, '', 0)
+#1 /var/www/demo83_color_usr43/data/www/demo83.colormoon.in/vda/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/demo83_color_usr43/data/www/demo83.colormoon.in/vda/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/demo83_color_usr43/data/www/demo83.colormoon.in/vda/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /var/www/demo83_color_usr43/data/www/demo83.colormoon.in/vda/system/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/demo83_color_usr43/data/www/demo83.colormoon.in/vda/system/BaseModel.php(713): CodeIgniter\Model->doFirst()
+#6 /var/www/demo83_color_usr43/data/www/demo83.colormoon.in/vda/app/Models/Admin/AdminUserModel.php(22): CodeIgniter\BaseModel->first()
+#7 /var/www/demo83_color_usr43/data/www/demo83.colormoon.in/vda/app/Controllers/Admin/AuthController.php(47): App\Models\Admin\AdminUserModel->findByEmail('admin@vda.com')
+#8 /var/www/demo83_color_usr43/data/www/demo83.colormoon.in/vda/system/CodeIgniter.php(951): App\Controllers\Admin\AuthController->loginPost()
+#9 /var/www/demo83_color_usr43/data/www/demo83.colormoon.in/vda/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AuthController))
+#10 /var/www/demo83_color_usr43/data/www/demo83.colormoon.in/vda/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /var/www/demo83_color_usr43/data/www/demo83.colormoon.in/vda/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 /var/www/demo83_color_usr43/data/www/demo83.colormoon.in/vda/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 /var/www/demo83_color_usr43/data/www/demo83.colormoon.in/vda/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'visakha_defence_acadamey' in /var/www/demo83_color_usr43/data/www/demo83.colormoon.in/vda/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /var/www/demo83_color_usr43/data/www/demo83.colormoon.in/vda/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/demo83_color_usr43/data/www/demo83.colormoon.in/vda/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/demo83_color_usr43/data/www/demo83.colormoon.in/vda/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /var/www/demo83_color_usr43/data/www/demo83.colormoon.in/vda/system/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#4 /var/www/demo83_color_usr43/data/www/demo83.colormoon.in/vda/system/BaseModel.php(713): CodeIgniter\Model->doFirst()
+#5 /var/www/demo83_color_usr43/data/www/demo83.colormoon.in/vda/app/Models/Admin/AdminUserModel.php(22): CodeIgniter\BaseModel->first()
+#6 /var/www/demo83_color_usr43/data/www/demo83.colormoon.in/vda/app/Controllers/Admin/AuthController.php(47): App\Models\Admin\AdminUserModel->findByEmail('admin@vda.com')
+#7 /var/www/demo83_color_usr43/data/www/demo83.colormoon.in/vda/system/CodeIgniter.php(951): App\Controllers\Admin\AuthController->loginPost()
+#8 /var/www/demo83_color_usr43/data/www/demo83.colormoon.in/vda/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AuthController))
+#9 /var/www/demo83_color_usr43/data/www/demo83.colormoon.in/vda/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/demo83_color_usr43/data/www/demo83.colormoon.in/vda/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /var/www/demo83_color_usr43/data/www/demo83.colormoon.in/vda/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /var/www/demo83_color_usr43/data/www/demo83.colormoon.in/vda/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2026-03-28 08:00:51 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'visakha_defence_acadamey'
+[Method: POST, Route: admin/login]
+in SYSTEMPATH/Database/BaseConnection.php on line 465.
+ 1 SYSTEMPATH/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `admin_users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Models/Admin/AdminUserModel.php(22): CodeIgniter\BaseModel->first()
+ 6 APPPATH/Controllers/Admin/AuthController.php(47): App\Models\Admin\AdminUserModel->findByEmail('admin@vda.com')
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Admin\AuthController->loginPost()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AuthController))
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

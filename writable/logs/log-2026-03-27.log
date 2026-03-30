@@ -1,0 +1,4 @@
+CRITICAL - 2026-03-27 09:56:12 --> ErrorException: Type of App\Models\Admin\FacilitiesModel::$casts must be array (as in class CodeIgniter\BaseModel)
+[Method: GET, Route: admin/facilities]
+in APPPATH\Models\Admin\FacilitiesModel.php on line 7.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
